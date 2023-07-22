@@ -22,7 +22,7 @@ export function Transactions({}: Props) {
             <tr>
               <td width="50%">Salário Mensal</td>
               <td>
-                <PriceHighlight variant="income">R$ 5.000,00</PriceHighlight>
+                <PriceHighlight $variant="income">R$ 5.000,00</PriceHighlight>
               </td>
               <td>Venda</td>
               <td>23/07/2023</td>
@@ -30,7 +30,7 @@ export function Transactions({}: Props) {
             <tr>
               <td width="50%">Curso de Ingles</td>
               <td>
-                <PriceHighlight variant="outcome">- R$ 300,00</PriceHighlight>
+                <PriceHighlight $variant="outcome">- R$ 300,00</PriceHighlight>
               </td>
 
               <td>Venda</td>

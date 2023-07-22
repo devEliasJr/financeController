@@ -26,7 +26,7 @@ export function Summary({}: Props) {
 
         <strong>R$ 15.444,00</strong>
       </SummaryCard>
-      <SummaryCard variant="green">
+      <SummaryCard $variant="green">
         <header>
           <span>Total</span>
           <CurrencyDollar size={32} color="#fff" />
