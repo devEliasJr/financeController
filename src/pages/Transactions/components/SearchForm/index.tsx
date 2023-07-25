@@ -1,14 +1,34 @@
+import { useForm } from "react-hook-form";
 import { SearchFormContainer } from "./styles";
-import {MagnifyingGlass} from '@phosphor-icons/react'
+import { MagnifyingGlass } from "@phosphor-icons/react";
+import * as z from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 
-type Props = {};
+const searchFormSchema = z.object({
+  query: z.string(),
+});
 
-export function SearchForm({}: Props) {
+type SearchFormInputs = z.infer<typeof searchFormSchema>;
+
+export function SearchForm() {
+  const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting },
+  } = useForm<SearchFormInputs>({
+    resolver: zodResolver(searchFormSchema),
+  });
+
+  async function handleSearchTransactions(data: SearchFormInputs) {
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
+    console.log(data);
+  }
   return (
-    <SearchFormContainer>
-      <input placeholder="Busce por transações" />
-      <button type="submit">
-        <MagnifyingGlass size={20}/>
+    <SearchFormContainer onSubmit={handleSubmit(handleSearchTransactions)}>
+      <input placeholder="Busce por transações" {...register("query")} />
+      <button type="submit" disabled={isSubmitting}>
+        <MagnifyingGlass size={20} />
         Buscar
       </button>
     </SearchFormContainer>
