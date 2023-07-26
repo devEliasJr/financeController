@@ -23,6 +23,30 @@
       "category": "Venda",
       "price": 180,
       "createdAt": "2023-07-25T12:00:08.775Z"
+    },
+    {
+      "description": "Combustível",
+      "price": 80,
+      "category": "Custos Adm",
+      "type": "income",
+      "createdAt": "2023-07-26T02:40:14.489Z",
+      "id": 4
+    },
+    {
+      "description": "Desenvolvimento Site BBQ",
+      "price": 3000,
+      "category": "Dev. Elias",
+      "type": "income",
+      "createdAt": "2023-07-26T02:46:03.257Z",
+      "id": 5
+    },
+    {
+      "description": "Teclado Mecânico",
+      "price": 290,
+      "category": "Equipamentos",
+      "type": "outcome",
+      "createdAt": "2023-07-26T03:00:44.254Z",
+      "id": 6
     }
   ]
 }
