@@ -1,6 +1,5 @@
 import { HeaderContainer, HeaderContent, NewTransactionButton } from "./styles";
 
-import Logoimg from "../../assets/Logo.svg";
 import * as Dialog from "@radix-ui/react-dialog";
 import { NewTransactionModal } from "../NewTransactionModal";
 
@@ -10,7 +9,11 @@ export function Header({}: Props) {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <img src={Logoimg} alt="" />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3514/3514721.png"
+          width={80}
+          alt=""
+        />
         <Dialog.Root>
           <Dialog.Trigger asChild>
             <NewTransactionButton>Nova Transação</NewTransactionButton>

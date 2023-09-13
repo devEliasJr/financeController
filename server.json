@@ -47,6 +47,22 @@
       "type": "outcome",
       "createdAt": "2023-07-26T03:00:44.254Z",
       "id": 6
+    },
+    {
+      "description": "Combustível",
+      "price": 100,
+      "category": "Custos ADM",
+      "type": "outcome",
+      "createdAt": "2023-09-12T17:50:04.427Z",
+      "id": 7
+    },
+    {
+      "description": "Salário Mensal",
+      "price": 3000,
+      "category": "Salário",
+      "type": "income",
+      "createdAt": "2023-09-12T17:50:26.786Z",
+      "id": 8
     }
   ]
 }
